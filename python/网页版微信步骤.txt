@@ -1,0 +1,230 @@
+获取uuid
+Request URL: https://login.wx.qq.com/jslogin?appid=wx782c26e4c19acffb&redirect_uri=https%3A%2F%2Fwx.qq.com%2Fcgi-bin%2Fmmwebwx-bin%2Fwebwxnewloginpage&fun=new&lang=zh_CN&_=1600588333014
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 10.68.211.5:8080
+Referrer Policy: no-referrer-when-downgrade
+window.QRLogin.code = 200; window.QRLogin.uuid = "Qbbw52QkUw==";
+
+
+打开页面
+Request URL: https://login.weixin.qq.com/qrcode/Qbbw52QkUw==
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 10.68.211.5:8080
+Referrer Policy: no-referrer-when-downgrade
+
+未扫码前一直轮询
+Request URL: https://login.wx.qq.com/cgi-bin/mmwebwx-bin/login?loginicon=true&uuid=Qbbw52QkUw==&tip=1&r=1434468063&_=1600588333015
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 10.68.211.5:8080
+Referrer Policy: no-referrer-when-downgrade
+window.code=408;
+
+扫码并确定登录
+Request URL: https://login.wx.qq.com/cgi-bin/mmwebwx-bin/login?loginicon=true&uuid=Qbbw52QkUw==&tip=0&r=1434362413&_=1600588333020
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 10.68.211.5:8080
+Referrer Policy: no-referrer-when-downgrade
+window.code=200;
+window.redirect_uri="https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxnewloginpage?ticket=ASVilyxcfau2yhNWFH1LeMyS@qrticket_0&uuid=Qbbw52QkUw==&lang=zh_CN&scan=1600588413";
+
+
+
+登录后
+Request URL: https://webpush.wx.qq.com/cgi-bin/mmwebwx-bin/synccheck?r=1600588592399&skey=%40crypt_3f3c65ea_4566f341714f29ccc505eb4bc10d50c0&sid=17ow93HuqTvx%2Bx4Z&uin=962023980&deviceid=e542960990712066&synckey=1_711545591%7C2_711545655%7C3_711545595%7C11_711545394%7C19_1417%7C201_1600588445%7C206_1%7C1000_1600584722%7C1001_1600584794&_=1600588333029
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 10.68.211.5:8080
+Referrer Policy: no-referrer-when-downgrade
+#没有消息
+window.synccheck={retcode:"0",selector:"0"}
+#有消息
+window.synccheck={retcode:"0",selector:"2"}
+
+检测到有消息
+Request URL: https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxsync?sid=17ow93HuqTvx+x4Z&skey=@crypt_3f3c65ea_4566f341714f29ccc505eb4bc10d50c0&lang=zh_CN&pass_ticket=Y2jLpQYAkXhgq6mb5x9Yx%252BqpejlMSukN%252Fy2tDoH2W2fvLhuPeVWqYZbrCGqUKBh3
+Request Method: POST
+Status Code: 200 OK
+Remote Address: 10.68.211.5:8080
+Referrer Policy: no-referrer-when-downgrade
+{
+"BaseResponse": {
+"Ret": 0,
+"ErrMsg": ""
+}
+,
+"AddMsgCount": 1,
+"AddMsgList": [{
+"MsgId": "4111455588072630929",
+"FromUserName": "@00e9c15fcce4ae97362a51f29ffde239",
+"ToUserName": "filehelper",
+"MsgType": 51,
+"Content": "",
+"Status": 3,
+"ImgStatus": 1,
+"CreateTime": 1600588940,
+"VoiceLength": 0,
+"PlayLength": 0,
+"FileName": "",
+"FileSize": "",
+"MediaId": "",
+"Url": "",
+"AppMsgType": 0,
+"StatusNotifyCode": 1,
+"StatusNotifyUserName": "filehelper",
+"RecommendInfo": {
+"UserName": "",
+"NickName": "",
+"QQNum": 0,
+"Province": "",
+"City": "",
+"Content": "",
+"Signature": "",
+"Alias": "",
+"Scene": 0,
+"VerifyFlag": 0,
+"AttrStatus": 0,
+"Sex": 0,
+"Ticket": "",
+"OpCode": 0
+}
+,
+"ForwardFlag": 0,
+"AppInfo": {
+"AppID": "",
+"Type": 0
+}
+,
+"HasProductId": 0,
+"Ticket": "",
+"ImgHeight": 0,
+"ImgWidth": 0,
+"SubMsgType": 0,
+"NewMsgId": 4111455588072630929,
+"OriContent": "",
+"EncryFileName": ""
+}
+],
+"ModContactCount": 0,
+"ModContactList": [],
+"DelContactCount": 0,
+"DelContactList": [],
+"ModChatRoomMemberCount": 0,
+"ModChatRoomMemberList": [],
+"Profile": {
+"BitFlag": 0,
+"UserName": {
+"Buff": ""
+}
+,
+"NickName": {
+"Buff": ""
+}
+,
+"BindUin": 0,
+"BindEmail": {
+"Buff": ""
+}
+,
+"BindMobile": {
+"Buff": ""
+}
+,
+"Status": 0,
+"Sex": 0,
+"PersonalCard": 0,
+"Alias": "",
+"HeadImgUpdateFlag": 0,
+"HeadImgUrl": "",
+"Signature": ""
+}
+,
+"ContinueFlag": 0,
+"SyncKey": {
+"Count": 9,
+"List": [{
+"Key": 1,
+"Val": 711545591
+}
+,{
+"Key": 2,
+"Val": 711545660
+}
+,{
+"Key": 3,
+"Val": 711545595
+}
+,{
+"Key": 11,
+"Val": 711545394
+}
+,{
+"Key": 19,
+"Val": 1417
+}
+,{
+"Key": 201,
+"Val": 1600588940
+}
+,{
+"Key": 206,
+"Val": 1
+}
+,{
+"Key": 1000,
+"Val": 1600584722
+}
+,{
+"Key": 1001,
+"Val": 1600584794
+}
+]
+}
+,
+"SKey": "",
+"SyncCheckKey": {
+"Count": 9,
+"List": [{
+"Key": 1,
+"Val": 711545591
+}
+,{
+"Key": 2,
+"Val": 711545660
+}
+,{
+"Key": 3,
+"Val": 711545595
+}
+,{
+"Key": 11,
+"Val": 711545394
+}
+,{
+"Key": 19,
+"Val": 1417
+}
+,{
+"Key": 201,
+"Val": 1600588940
+}
+,{
+"Key": 206,
+"Val": 1
+}
+,{
+"Key": 1000,
+"Val": 1600584722
+}
+,{
+"Key": 1001,
+"Val": 1600584794
+}
+]
+}
+
+}
+
